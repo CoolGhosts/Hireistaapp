@@ -1,0 +1,117 @@
+#!/usr/bin/env python3
+# test_jobs.py - Fallback job data when APIs fail
+
+TEST_JOBS = [
+    {
+        "external_id": "test_1",
+        "source": "test_data",
+        "title": "Senior Frontend Developer",
+        "company": "TechCorp",
+        "location": "Remote",
+        "pay": "$120K-$150K",
+        "image": "https://picsum.photos/200",
+        "apply_url": "https://example.com/apply/1",
+        "description": "We are looking for a senior frontend developer with 5+ years of experience in React, TypeScript, and modern web technologies.",
+        "tags": ["React", "TypeScript", "Redux", "Frontend"],
+        "qualifications": ["5+ years of experience with React", "Strong TypeScript skills", "Experience with state management"],
+        "requirements": ["Bachelor's degree in Computer Science or equivalent", "Excellent communication skills", "Experience with agile methodologies"]
+    },
+    {
+        "external_id": "test_2",
+        "source": "test_data",
+        "title": "Backend Developer",
+        "company": "DataSystems",
+        "location": "San Francisco, CA",
+        "pay": "$130K-$160K",
+        "image": "https://picsum.photos/200?random=2",
+        "apply_url": "https://example.com/apply/2",
+        "description": "Join our backend team to build high-performance APIs and services using Node.js and PostgreSQL.",
+        "tags": ["Node.js", "PostgreSQL", "REST API", "Backend"],
+        "qualifications": ["3+ years of experience with Node.js", "Strong database design skills", "Experience with RESTful API design"],
+        "requirements": ["Bachelor's degree in Computer Science or related field", "Strong problem-solving skills"]
+    },
+    {
+        "external_id": "test_3",
+        "source": "test_data",
+        "title": "DevOps Engineer",
+        "company": "CloudTech",
+        "location": "Remote",
+        "pay": "$140K-$170K",
+        "image": "https://picsum.photos/200?random=3",
+        "apply_url": "https://example.com/apply/3",
+        "description": "We're looking for a DevOps engineer to help us build and maintain our cloud infrastructure on AWS.",
+        "tags": ["AWS", "Kubernetes", "Docker", "CI/CD"],
+        "qualifications": ["3+ years of experience with AWS", "Experience with Kubernetes and Docker", "Strong scripting skills"],
+        "requirements": ["Bachelor's degree or equivalent experience", "AWS certifications preferred"]
+    },
+    {
+        "external_id": "test_4",
+        "source": "test_data",
+        "title": "UX/UI Designer",
+        "company": "DesignWorks",
+        "location": "New York, NY",
+        "pay": "$110K-$140K",
+        "image": "https://picsum.photos/200?random=4",
+        "apply_url": "https://example.com/apply/4",
+        "description": "Join our design team to create beautiful and intuitive user interfaces for our products.",
+        "tags": ["Figma", "UI Design", "User Research", "Prototyping"],
+        "qualifications": ["3+ years of experience in UX/UI design", "Strong portfolio of design work", "Experience with Figma"],
+        "requirements": ["Bachelor's degree in Design or related field", "Experience with user research"]
+    },
+    {
+        "external_id": "test_5",
+        "source": "test_data",
+        "title": "Data Scientist",
+        "company": "AnalyticsPro",
+        "location": "Remote",
+        "pay": "$130K-$160K",
+        "image": "https://picsum.photos/200?random=5",
+        "apply_url": "https://example.com/apply/5",
+        "description": "We are seeking a data scientist to help us build machine learning models and analyze large datasets.",
+        "tags": ["Python", "Machine Learning", "Data Analysis", "SQL"],
+        "qualifications": ["Master's degree in Computer Science, Statistics, or related field", "Experience with Python and machine learning libraries", "Strong SQL skills"],
+        "requirements": ["Experience with data visualization", "Strong communication skills"]
+    },
+    {
+        "external_id": "test_6",
+        "source": "test_data",
+        "title": "Product Manager",
+        "company": "ProductLabs",
+        "location": "Austin, TX",
+        "pay": "$120K-$150K",
+        "image": "https://picsum.photos/200?random=6",
+        "apply_url": "https://example.com/apply/6",
+        "description": "We're looking for a product manager to help us build and launch new features for our platform.",
+        "tags": ["Product Management", "Agile", "User Stories", "Roadmapping"],
+        "qualifications": ["3+ years of experience in product management", "Experience with agile methodologies", "Strong communication skills"],
+        "requirements": ["Bachelor's degree or equivalent experience", "Technical background preferred"]
+    },
+    {
+        "external_id": "test_7",
+        "source": "test_data",
+        "title": "Mobile Developer",
+        "company": "AppWorks",
+        "location": "Remote",
+        "pay": "$110K-$140K",
+        "image": "https://picsum.photos/200?random=7",
+        "apply_url": "https://example.com/apply/7",
+        "description": "Join our mobile team to build high-quality iOS and Android applications using React Native.",
+        "tags": ["React Native", "iOS", "Android", "Mobile Development"],
+        "qualifications": ["3+ years of experience with mobile development", "Experience with React Native", "Knowledge of iOS and Android platforms"],
+        "requirements": ["Bachelor's degree in Computer Science or related field", "Experience with app store deployment"]
+    },
+    {
+        "external_id": "test_8",
+        "source": "test_data",
+        "title": "Full Stack Developer",
+        "company": "WebSolutions",
+        "location": "Chicago, IL",
+        "pay": "$120K-$150K",
+        "image": "https://picsum.photos/200?random=8",
+        "apply_url": "https://example.com/apply/8",
+        "description": "We are looking for a full stack developer to help us build and maintain our web applications.",
+        "tags": ["React", "Node.js", "PostgreSQL", "Full Stack"],
+        "qualifications": ["3+ years of full stack development experience", "Experience with React and Node.js", "Strong database skills"],
+        "requirements": ["Bachelor's degree in Computer Science or related field", "Strong problem-solving skills"]
+    }
+]

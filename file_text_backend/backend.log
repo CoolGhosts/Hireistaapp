@@ -1,0 +1,524 @@
+ * Serving Flask app 'extract_text_api'
+ * Debug mode: off
+2025-04-30 08:10:56,400 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.190:5000
+2025-04-30 08:10:56,400 INFO [33mPress CTRL+C to quit[0m
+2025-04-30 13:21:11,247 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.190:5000
+2025-04-30 13:21:11,247 INFO [33mPress CTRL+C to quit[0m
+2025-04-30 13:24:37,497 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.190:5000
+2025-04-30 13:24:37,497 INFO [33mPress CTRL+C to quit[0m
+2025-05-06 17:03:04,274 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.190:5000
+2025-05-06 17:03:04,274 INFO [33mPress CTRL+C to quit[0m
+2025-05-06 17:03:20,256 INFO 10.0.0.105 - - [06/May/2025 17:03:20] "POST /extract-text HTTP/1.1" 200 -
+2025-05-06 17:03:20,981 INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-06 17:03:41,125 INFO === RAW MODEL RESULT ===
+2025-05-06 17:03:41,125 INFO Here is the analysis of the resume in JSON format:
+
+```json
+{
+  "overallSummary": "The resume is well-structured and showcases the candidate's experience in software engineering, with a focus on Python, Java, and cloud computing. However, there are areas for improvement in terms of clarity, concision, and relevance to specific job openings.",
+  "overallScore": 7,
+  "strengths": [
+    "Relevant experience in software engineering, including internships at Hack the Hood, Walmart, and Amazon",
+    "Proficiency in multiple programming languages, including Python, Java, C++, and JavaScript",
+    "Experience with data analysis and visualization using libraries like NumPy and Pandas",
+    "Strong problem-solving and algorithmic skills, demonstrated through projects and job simulations"
+  ],
+  "areasForImprovement": [
+    "Lack of clear and concise summary of career goals and job aspirations",
+    "Inconsistent formatting and bullet point usage throughout the resume",
+    "Limited relevance of some sections, such as 'KEY ACHIEVEMENTS' and 'LANGUAGES', to specific job openings",
+    "No clear mention of soft skills, such as teamwork, communication, and time management"
+  ],
+  "sections": [
+    {
+      "sectionName": "Summary",
+      "score": 6,
+      "summary": "The summary is well-written but lacks clarity and concision. It could be improved by highlighting specific career goals and job aspirations.",
+      "strengths": [
+        "Mentions relevant experience and skills",
+        "Shows enthusiasm and passion for software engineering"
+      ],
+      "weaknesses": [
+        "Lacks specificity and clarity",
+        "Could be condensed into a single paragraph"
+      ],
+      "suggestions": [
+        "Use a clear and concise format",
+        "Highlight specific career goals and job aspirations"
+      ],
+      "examples": [
+        "Example: 'Highly motivated software engineer with experience in Python, Java, and cloud computing, seeking a challenging role in a innovative company.'"
+      ]
+    },
+    {
+      "sectionName": "Education",
+      "score": 8,
+      "summary": "The education section is well-structured and easy to read.",
+      "strengths": [
+        "Relevant coursework and academic achievements",
+        "GPA and academic awards are mentioned"
+      ],
+      "weaknesses": [
+        "Lack of relevance to specific job openings"
+      ],
+      "suggestions": [
+        "Emphasize relevant coursework and academic achievements",
+        "Consider adding relevant projects or academic papers"
+      ],
+      "examples": [
+        "Example: 'Bachelor of Science in Computer Science, XYZ University, GPA: 3.5/4.0, Relevant coursework: Data Structures, Algorithms, Computer Systems'"
+      ]
+    },
+    {
+      "sectionName": "Experience",
+      "score": 9,
+      "summary": "The experience section is well-structured and showcases relevant experience in software engineering.",
+      "strengths": [
+        "Relevant internships and job simulations",
+        "Specific examples of projects and achievements"
+      ],
+      "weaknesses": [
+        "Lack of clear metrics and impact"
+      ],
+      "suggestions": [
+        "Use specific metrics and numbers to demonstrate impact",
+        "Emphasize achievements and accomplishments"
+      ],
+      "examples": [
+        "Example: 'Software Engineer Intern, ABC Company, 2022, Improved code efficiency by 30%, Developed a new feature that increased user engagement by 25%'"
+      ]
+    },
+    {
+      "sectionName": "Skills",
+      "score": 7,
+      "summary": "The skills section is well-structured but could be improved by highlighting specific skills and technologies.",
+      "strengths": [
+        "Relevant programming languages and technologies",
+        "Soft skills like data analysis and visualization"
+      ],
+      "weaknesses": [
+        "Lack of specificity and clarity",
+        "Could be condensed into a single list"
+      ],
+      "suggestions": [
+        "Use specific skills and technologies",
+        "Emphasize relevant skills and experience"
+      ],
+      "examples": [
+        "Example: 'Programming languages: Python, Java, JavaScript, Technologies: AWS, Azure, Google Cloud'"
+      ]
+    },
+    {
+      "sectionName": "KEY ACHIEVEMENTS",
+      "score": 5,
+      "summary": "The key achievements section is not well-structured and lacks relevance to specific job openings.",
+      "strengths": [
+        "Relevant achievements and accomplishments"
+      ],
+      "weaknesses": [
+        "Lack of clarity and specificity",
+        "Not well-organized"
+      ],
+      "suggestions": [
+        "Use a clear and concise format",
+        "Emphasize relevant achievements and accomplishments"
+      ],
+      "examples": [
+        "Example: 'Improved code efficiency by 30%, Developed a new feature that increased user engagement by 25%'"
+      ]
+    }
+  ],
+  "keySkills": [
+    {
+      "skill": "Python",
+      "score": 8,
+      "evidence": "Experience with Python, including data analysis and visualization using libraries like NumPy and Pandas"
+    },
+    {
+      "skill": "Java",
+      "score": 7,
+      "evidence": "Experience with Java, including development of a novel version of a heap data structure"
+    },
+    {
+      "skill": "Cloud Computing",
+      "score": 6,
+      "evidence": "Experience with cloud computing, including design and deployment of a simple and scalable hosting architecture using Elastic Beanstalk"
+    }
+  ],
+  "jobMatches": [
+    {
+      "id": "2",
+      "title": "Backend Engineer",
+      "company": "DataCorp",
+      "matchScore": 80,
+      "missingSkills": ["Django", "Flask"]
+    },
+    {
+      "id": "5",
+      "title": "Full Stack Developer",
+      "company": "DevSolutions",
+      "matchScore": 70,
+      "missingSkills": ["Node.js", "React"]
+    }
+  ],
+  "visualSuggestions": [
+    "Use a clear and concise format throughout the resume",
+    "Use bullet points and white space effectively",
+    "Consider adding relevant projects or academic papers to the education section",
+    "Use specific metrics and numbers to demonstrate impact in the experience section"
+  ]
+}
+```
+
+Note that I've provided a thorough analysis of the resume, including strengths, weaknesses, and suggestions for improvement. I've also provided a list of key skills, job matches, and visual suggestions for improvement. The overall score is 7, indicating that the resume is well-structured but could be improved in terms of clarity, concision, and relevance to specific job openings.
+2025-05-06 17:03:41,125 INFO ========================
+2025-05-06 17:03:41,126 INFO 10.0.0.105 - - [06/May/2025 17:03:41] "POST /analyze-resume HTTP/1.1" 200 -
+2025-05-06 17:10:32,797 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.190:5000
+2025-05-06 17:10:32,798 INFO [33mPress CTRL+C to quit[0m
+2025-05-06 17:10:40,850 INFO 10.0.0.105 - - [06/May/2025 17:10:40] "POST /extract-text HTTP/1.1" 200 -
+2025-05-06 17:10:41,370 INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-06 17:10:58,791 INFO === RAW MODEL RESULT ===
+2025-05-06 17:10:58,791 INFO ```json
+{
+  "overallSummary": "This is a strong resume that showcases a software engineering student's skills, experience, and achievements. The candidate has demonstrated hands-on experience with various programming languages, technologies, and tools, and has a clear passion for software engineering. With some refinements, this resume can be even more effective in highlighting the candidate's strengths and potential.",
+  "overallScore": 8,
+  "strengths": [
+    "Relevant work experience at Hack the Hood, Walmart, and Amazon",
+    "Proficiency in multiple programming languages, including Python, Java, and C++",
+    "Experience with data analysis, data structures, and software design",
+    "Leadership skills demonstrated through tutoring and leading projects",
+    "Strong educational background with a high GPA"
+  ],
+  "areasForImprovement": [
+    "Quantify achievements and impact wherever possible",
+    "Emphasize transferable skills and soft skills",
+    "Use more specific language to describe technical skills and experience",
+    "Consider adding relevant projects or personal contributions to open-source projects"
+  ],
+  "sections": [
+    {
+      "sectionName": "Summary",
+      "score": 8,
+      "summary": "The summary effectively highlights the candidate's passion for software engineering, experience, and skills. However, it could be more concise and focused on specific strengths.",
+      "strengths": [
+        "Clear passion for software engineering",
+        "Relevant experience mentioned",
+        "Key skills highlighted"
+      ],
+      "weaknesses": [
+        "Could be more concise",
+        "Lack of specific achievements or impact"
+      ],
+      "suggestions": [
+        "Focus on specific strengths and achievements",
+        "Use more active language to convey enthusiasm and skills"
+      ]
+    },
+    {
+      "sectionName": "Education",
+      "score": 9,
+      "summary": "The education section is strong, with a clear listing of institutions, dates, and GPAs. However, it could be more concise and formatted for easier reading.",
+      "strengths": [
+        "Relevant coursework and institutions listed",
+        "High GPAs demonstrated",
+        "Summer programs highlighted"
+      ],
+      "weaknesses": [
+        "Could be more concise",
+        "Lack of specific skills or achievements"
+      ],
+      "suggestions": [
+        "Use a more consistent format for listing education",
+        "Consider adding relevant courses or academic achievements"
+      ],
+      "examples": [
+        "Bachelor of Science in Computer Science, XYZ University (20XX-20XX)",
+        "GPA: 3.8/4.0"
+      ]
+    },
+    {
+      "sectionName": "Experience",
+      "score": 9,
+      "summary": "The experience section is strong, with clear descriptions of roles, responsibilities, and achievements. However, it could be more concise and focused on specific skills and impact.",
+      "strengths": [
+        "Relevant work experience at Hack the Hood, Walmart, and Amazon",
+        "Clear descriptions of roles and responsibilities",
+        "Achievements and skills highlighted"
+      ],
+      "weaknesses": [
+        "Could be more concise",
+        "Lack of specific metrics or impact"
+      ],
+      "suggestions": [
+        "Use more active language to convey achievements and skills",
+        "Consider adding specific metrics or impact"
+      ],
+      "examples": [
+        "Software Engineer Intern, Hack the Hood (09/2023-12/2023)",
+        "Developed and deployed a data analysis project using Python and Pandas"
+      ]
+    },
+    {
+      "sectionName": "Skills",
+      "score": 8,
+      "summary": "The skills section is strong, with a clear listing of technical skills. However, it could be more concise and focused on specific skills and experience.",
+      "strengths": [
+        "Relevant technical skills listed",
+        "Proficiency in multiple programming languages demonstrated"
+      ],
+      "weaknesses": [
+        "Could be more concise",
+        "Lack of specific experience or achievements"
+      ],
+      "suggestions": [
+        "Use more specific language to describe technical skills",
+        "Consider adding relevant certifications or training"
+      ]
+    }
+  ],
+  "keySkills": [
+    {
+      "skill": "Python",
+      "score": 9,
+      "evidence": "Experience with Python demonstrated through projects and work experience"
+    },
+    {
+      "skill": "Java",
+      "score": 8,
+      "evidence": "Experience with Java demonstrated through projects and work experience"
+    },
+    {
+      "skill": "Data Structures",
+      "score": 8,
+      "evidence": "Experience with data structures demonstrated through projects and work experience"
+    }
+  ],
+  "jobMatches": [
+    {
+      "id": "2",
+      "title": "Backend Engineer",
+      "company": "DataCorp",
+      "matchScore": 85,
+      "missingSkills": ["Django"]
+    },
+    {
+      "id": "5",
+      "title": "Full Stack Developer",
+      "company": "DevSolutions",
+      "matchScore": 80,
+      "missingSkills": ["Node.js", "React"]
+    }
+  ],
+  "visualSuggestions": [
+    "Use a more consistent font and formatting throughout the resume",
+    "Consider adding relevant sections or bullet points to highlight achievements and skills",
+    "Use more white space to make the resume easier to read"
+  ]
+}
+```
+2025-05-06 17:10:58,791 INFO ========================
+2025-05-06 17:10:58,792 INFO 10.0.0.105 - - [06/May/2025 17:10:58] "POST /analyze-resume HTTP/1.1" 200 -
+2025-05-13 00:40:43,805 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.190:5000
+2025-05-13 00:40:43,805 INFO [33mPress CTRL+C to quit[0m
+2025-05-13 00:56:48,422 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.190:5000
+2025-05-13 00:56:48,422 INFO [33mPress CTRL+C to quit[0m
+2025-05-13 00:59:29,502 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.190:5000
+2025-05-13 00:59:29,502 INFO [33mPress CTRL+C to quit[0m
+2025-05-13 00:59:37,676 INFO 10.0.0.190 - - [13/May/2025 00:59:37] "[33mGET / HTTP/1.1[0m" 404 -
+2025-05-13 00:59:37,751 INFO 10.0.0.190 - - [13/May/2025 00:59:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-13 00:59:41,561 INFO 127.0.0.1 - - [13/May/2025 00:59:41] "[33mGET / HTTP/1.1[0m" 404 -
+2025-05-13 00:59:41,627 INFO 127.0.0.1 - - [13/May/2025 00:59:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-10 17:29:59,831 WARNING PyMuPDF (fitz) not available. PDF extraction will be limited.
+2025-06-10 17:30:10,076 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.181:5000
+2025-06-10 17:30:10,077 INFO [33mPress CTRL+C to quit[0m
+2025-06-10 17:30:10,086 INFO  * Restarting with stat
+2025-06-10 17:30:10,415 WARNING PyMuPDF (fitz) not available. PDF extraction will be limited.
+2025-06-10 17:30:11,389 WARNING  * Debugger is active!
+2025-06-10 17:30:11,395 INFO  * Debugger PIN: 796-321-200
+2025-06-10 17:31:37,491 INFO  * Detected change in 'C:\\Users\\sharm\\Documents\\Hireista\\file_text_backend\\test_api.py', reloading
+2025-06-10 17:31:37,671 INFO  * Restarting with stat
+2025-06-10 17:31:37,970 WARNING PyMuPDF (fitz) not available. PDF extraction will be limited.
+2025-06-10 17:31:38,937 WARNING  * Debugger is active!
+2025-06-10 17:31:38,942 INFO  * Debugger PIN: 796-321-200
+2025-06-10 17:31:58,885 INFO 10.0.0.181 - - [10/Jun/2025 17:31:58] "GET /health HTTP/1.1" 200 -
+2025-06-10 17:32:03,445 INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-06-10 17:32:03,451 ERROR Error in analyze-resume endpoint: Error code: 401 - {'error': {'message': 'No auth credentials found', 'code': 401}}
+2025-06-10 17:32:03,455 ERROR Traceback (most recent call last):
+  File "C:\Users\sharm\Documents\Hireista\file_text_backend\extract_text_api.py", line 262, in analyze_resume
+    completion = client.chat.completions.create(
+        model="meta-llama/llama-4-scout:free",
+        messages=messages
+    )
+  File "C:\Users\sharm\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\openai\_utils\_utils.py", line 287, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\sharm\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\openai\resources\chat\completions\completions.py", line 925, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/chat/completions",
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<43 lines>...
+        stream_cls=Stream[ChatCompletionChunk],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sharm\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\openai\_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sharm\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\openai\_base_client.py", line 1037, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'No auth credentials found', 'code': 401}}
+
+2025-06-10 17:32:03,456 INFO 10.0.0.181 - - [10/Jun/2025 17:32:03] "POST /analyze-resume HTTP/1.1" 200 -
+2025-06-10 17:32:34,610 INFO 10.0.0.106 - - [10/Jun/2025 17:32:34] "GET /health HTTP/1.1" 200 -
+2025-06-10 17:32:37,176 INFO Saved file currentresume.pdf to /tmp/CurrentResume.pdf
+2025-06-10 17:32:37,177 INFO 10.0.0.106 - - [10/Jun/2025 17:32:37] "POST /extract-text HTTP/1.1" 200 -
+2025-06-10 17:32:37,977 INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-06-10 17:32:37,978 ERROR Error in analyze-resume endpoint: Error code: 401 - {'error': {'message': 'No auth credentials found', 'code': 401}}
+2025-06-10 17:32:37,980 ERROR Traceback (most recent call last):
+  File "C:\Users\sharm\Documents\Hireista\file_text_backend\extract_text_api.py", line 262, in analyze_resume
+    completion = client.chat.completions.create(
+        model="meta-llama/llama-4-scout:free",
+        messages=messages
+    )
+  File "C:\Users\sharm\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\openai\_utils\_utils.py", line 287, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\sharm\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\openai\resources\chat\completions\completions.py", line 925, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/chat/completions",
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<43 lines>...
+        stream_cls=Stream[ChatCompletionChunk],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sharm\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\openai\_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sharm\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\openai\_base_client.py", line 1037, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'No auth credentials found', 'code': 401}}
+
+2025-06-10 17:32:37,981 INFO 10.0.0.106 - - [10/Jun/2025 17:32:37] "POST /analyze-resume HTTP/1.1" 200 -
+2025-06-10 17:42:25,511 WARNING PyMuPDF (fitz) not available. PDF extraction will be limited.
+2025-06-10 17:42:26,469 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.181:5000
+2025-06-10 17:42:26,470 INFO [33mPress CTRL+C to quit[0m
+2025-06-10 17:42:26,471 INFO  * Restarting with stat
+2025-06-10 17:42:26,775 WARNING PyMuPDF (fitz) not available. PDF extraction will be limited.
+2025-06-10 17:42:27,675 WARNING  * Debugger is active!
+2025-06-10 17:42:27,680 INFO  * Debugger PIN: 796-321-200
+2025-06-10 17:43:48,469 INFO 10.0.0.106 - - [10/Jun/2025 17:43:48] "GET /health HTTP/1.1" 200 -
+2025-06-10 17:43:50,730 INFO Saved file currentresume.pdf to /tmp/CurrentResume.pdf
+2025-06-10 17:43:50,731 INFO 10.0.0.106 - - [10/Jun/2025 17:43:50] "POST /extract-text HTTP/1.1" 200 -
+2025-06-10 17:43:52,301 INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-06-10 17:43:52,303 ERROR Error in analyze-resume endpoint: Error code: 401 - {'error': {'message': 'No auth credentials found', 'code': 401}}
+2025-06-10 17:43:52,307 ERROR Traceback (most recent call last):
+  File "C:\Users\sharm\Documents\Hireista\file_text_backend\extract_text_api.py", line 262, in analyze_resume
+    completion = client.chat.completions.create(
+        model="meta-llama/llama-4-scout:free",
+        messages=messages
+    )
+  File "C:\Users\sharm\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\openai\_utils\_utils.py", line 287, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\sharm\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\openai\resources\chat\completions\completions.py", line 925, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/chat/completions",
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<43 lines>...
+        stream_cls=Stream[ChatCompletionChunk],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sharm\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\openai\_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sharm\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\openai\_base_client.py", line 1037, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'No auth credentials found', 'code': 401}}
+
+2025-06-10 17:43:52,308 INFO 10.0.0.106 - - [10/Jun/2025 17:43:52] "POST /analyze-resume HTTP/1.1" 200 -
+2025-06-10 19:38:32,561 WARNING PyMuPDF (fitz) not available. PDF extraction will be limited.
+2025-06-10 19:38:50,746 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.181:5000
+2025-06-10 19:38:50,746 INFO [33mPress CTRL+C to quit[0m
+2025-06-10 19:38:50,757 INFO  * Restarting with stat
+2025-06-10 19:38:51,161 WARNING PyMuPDF (fitz) not available. PDF extraction will be limited.
+2025-06-10 19:38:52,490 WARNING  * Debugger is active!
+2025-06-10 19:38:52,501 INFO  * Debugger PIN: 796-321-200
+2025-06-10 19:39:26,964 INFO 10.0.0.106 - - [10/Jun/2025 19:39:26] "GET /health HTTP/1.1" 200 -
+2025-06-10 19:39:30,935 INFO Saved file currentresume.pdf to /tmp/CurrentResume.pdf
+2025-06-10 19:39:30,936 INFO 10.0.0.106 - - [10/Jun/2025 19:39:30] "POST /extract-text HTTP/1.1" 200 -
+2025-06-10 19:39:37,535 INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-06-10 19:39:37,538 ERROR Error in analyze-resume endpoint: Error code: 401 - {'error': {'message': 'No auth credentials found', 'code': 401}}
+2025-06-10 19:39:37,611 ERROR Traceback (most recent call last):
+  File "C:\Users\sharm\Documents\Hireista\file_text_backend\extract_text_api.py", line 262, in analyze_resume
+    completion = client.chat.completions.create(
+        model="meta-llama/llama-4-scout:free",
+        messages=messages
+    )
+  File "C:\Users\sharm\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\openai\_utils\_utils.py", line 287, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\sharm\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\openai\resources\chat\completions\completions.py", line 925, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/chat/completions",
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<43 lines>...
+        stream_cls=Stream[ChatCompletionChunk],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sharm\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\openai\_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sharm\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\openai\_base_client.py", line 1037, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'No auth credentials found', 'code': 401}}
+
+2025-06-10 19:39:37,612 INFO 10.0.0.106 - - [10/Jun/2025 19:39:37] "POST /analyze-resume HTTP/1.1" 200 -
+2025-06-11 03:11:17,627 WARNING PyMuPDF (fitz) not available. PDF extraction will be limited.
+2025-08-02 17:17:00,985 WARNING OPENROUTER_API_KEY not found in environment. AI analysis will be disabled.
+2025-08-02 17:17:01,101 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.181:5000
+2025-08-02 17:17:01,101 INFO [33mPress CTRL+C to quit[0m
+2025-08-02 17:17:01,112 INFO  * Restarting with stat
+2025-08-02 17:17:02,972 WARNING OPENROUTER_API_KEY not found in environment. AI analysis will be disabled.
+2025-08-02 17:17:02,993 WARNING  * Debugger is active!
+2025-08-02 17:17:03,002 INFO  * Debugger PIN: 111-135-628
+2025-08-02 23:23:07,468 INFO 127.0.0.1 - - [02/Aug/2025 23:23:07] "[33mGET /?ide_webview_request_time=1754202187051 HTTP/1.1[0m" 404 -
+2025-08-02 23:23:09,288 INFO 127.0.0.1 - - [02/Aug/2025 23:23:09] "[33mGET /@vite/client HTTP/1.1[0m" 404 -

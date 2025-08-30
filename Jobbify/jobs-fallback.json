@@ -1,0 +1,98 @@
+[
+  {
+    "id": "1",
+    "title": "Frontend Developer",
+    "company": "TechCorp",
+    "location": "Remote",
+    "salary": "$90K-$120K",
+    "logo": "https://randomuser.me/api/portraits/men/11.jpg",
+    "apply_url": "https://example.com/apply/1",
+    "description": "We are looking for an experienced frontend developer to join our growing team.",
+    "qualifications": ["3+ years experience with React", "Strong TypeScript skills", "Knowledge of modern CSS"],
+    "requirements": ["Bachelor's degree in Computer Science or equivalent", "Experience with state management"]
+  },
+  {
+    "id": "2",
+    "title": "UX Designer",
+    "company": "DesignHub",
+    "location": "New York, NY",
+    "salary": "$85K-$110K",
+    "logo": "https://randomuser.me/api/portraits/women/22.jpg",
+    "apply_url": "https://example.com/apply/2",
+    "description": "Join our team to create beautiful and functional user experiences for our clients.",
+    "qualifications": ["Experience with Figma", "Portfolio of UX work", "User testing experience"],
+    "requirements": ["Design degree preferred", "Strong communication skills"]
+  },
+  {
+    "id": "3",
+    "title": "Full Stack Developer",
+    "company": "WebSolutions",
+    "location": "Remote",
+    "salary": "$120K-$150K",
+    "logo": "https://randomuser.me/api/portraits/men/33.jpg",
+    "apply_url": "https://example.com/apply/3",
+    "description": "Looking for a full stack developer with experience in React and Node.js.",
+    "qualifications": ["5+ years full stack experience", "Experience with React and Node.js", "Database design skills"],
+    "requirements": ["Computer Science background", "Experience with cloud platforms"]
+  },
+  {
+    "id": "4",
+    "title": "Mobile Developer",
+    "company": "AppWorks",
+    "location": "Chicago, IL",
+    "salary": "$95K-$125K",
+    "logo": "https://randomuser.me/api/portraits/men/44.jpg",
+    "apply_url": "https://example.com/apply/4",
+    "description": "We need a skilled mobile developer to work on our cross-platform applications.",
+    "qualifications": ["Experience with React Native", "Knowledge of native iOS or Android", "App publishing experience"],
+    "requirements": ["Computer Science degree", "3+ years mobile development"]
+  },
+  {
+    "id": "5",
+    "title": "Data Scientist",
+    "company": "DataFlow",
+    "location": "Austin, TX",
+    "salary": "$100K-$130K",
+    "logo": "https://randomuser.me/api/portraits/men/55.jpg",
+    "apply_url": "https://example.com/apply/5",
+    "description": "Looking for a data scientist to help us extract insights from our growing dataset.",
+    "qualifications": ["Strong Python skills", "Experience with machine learning", "Statistics background"],
+    "requirements": ["MS or PhD in relevant field", "Experience with big data technologies"]
+  },
+  {
+    "id": "6",
+    "title": "DevOps Engineer",
+    "company": "CloudTech",
+    "location": "Seattle, WA",
+    "salary": "$110K-$140K",
+    "logo": "https://randomuser.me/api/portraits/women/33.jpg",
+    "apply_url": "https://example.com/apply/6",
+    "description": "Join our team to build and maintain our cloud infrastructure and CI/CD pipelines.",
+    "qualifications": ["AWS or Azure experience", "Docker and Kubernetes", "Infrastructure as Code"],
+    "requirements": ["3+ years DevOps experience", "Strong Linux skills"]
+  },
+  {
+    "id": "7",
+    "title": "Product Manager",
+    "company": "ProductLab",
+    "location": "Boston, MA",
+    "salary": "$115K-$145K",
+    "logo": "https://randomuser.me/api/portraits/women/45.jpg",
+    "apply_url": "https://example.com/apply/7",
+    "description": "We're looking for a product manager to help define our product strategy and roadmap.",
+    "qualifications": ["Experience in product management", "Agile methodologies", "User research skills"],
+    "requirements": ["5+ years product management experience", "Technical background preferred"]
+  },
+  {
+    "id": "8",
+    "title": "QA Engineer",
+    "company": "TestPro",
+    "location": "Denver, CO",
+    "salary": "$80K-$105K",
+    "logo": "https://randomuser.me/api/portraits/men/66.jpg",
+    "apply_url": "https://example.com/apply/8",
+    "description": "Join our QA team to ensure our products meet the highest quality standards.",
+    "qualifications": ["Manual and automated testing", "Test planning", "Bug tracking"],
+    "requirements": ["QA certification preferred", "3+ years QA experience"]
+  }
+] 
